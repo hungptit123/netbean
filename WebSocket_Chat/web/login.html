@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        #div_start_chat{
+            visibility: hidden;
+        }
+    </style>
+    <body>
+        <div id="div_login">
+            <form>
+                UserName: <input type="text" id="user_name"/></br></br>
+                PassWord: <input type="password" id ="pass_word" /></br></br>
+                <input onclick="start_login()" type="button" value="Login" />
+            </form>
+        </div>
+        <div id="div_start_chat">
+            Name: <input id="label" type="text"/>
+            <input onclick="sendName()" value="Register Name" type="button" /> <br/><br/>
+            Object chat: <input id="object_chat" type="text" /> <br/><br/>
+            Message : <input id="textMessage" type="text" />
+            <input onclick="sendMessage()" value="Send Message" type="button" /> <br/><br/>
+            <textarea id="textAreaMessage" rows="10" cols="50"></textarea>
+        </div>
+        <script type="text/javascript" src="interface.js">
+            
+        </script>
+        
+    </body>
+</html>
